@@ -68,14 +68,15 @@ h1, h2, h3, h4, h5 {
 body{
 	margin: 8%;
 	margin-top: 0;
+	font-family: 'Titilium Web', sans-serif;
 }
-nav{
+.nav{
 	display: flex;
 	justify-content: space-between;
 	margin: 3% 0;
 	width: 100%;
 }
-nav a{
+.nav a{
 	padding: 15px;
 	color: grey;
 	text-decoration: none;
@@ -83,7 +84,7 @@ nav a{
 nav a:hover{
 	color: deepskyblue;
 }
-.logo {
+.nav .logo {
 	width: 15%;
 	margin: 0 3%;
 }
@@ -156,11 +157,79 @@ footer{
 	text-align: center;
 }
 
-/* SERVICE PAGE STYLE
-
-HERO STYLE*/
-nav{
-	width: 100%;
-	display: flex;
+/* SERVICE PAGE STYLE*/
+body{
+	margin: 0 5%;
+}
+/*HERO STYLE*/
+.servNav{
+	display:flex;
 	justify-content: space-between;
+	margin-top: 4%;
+	align-items: center;
+}
+.servNav div{
+	width: 70%;
+	margin: 3%;
+}
+.servNavLinks{
+	text-decoration: none;
+	color: gray;
+	padding: 1%;
+}
+.servicesheader{
+	display: flex;
+	flex-direction: column;
+}
+.servicesheader div{
+	width: 75%;
+	display:flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+.servicesheader h1{
+	font-size: 30px;
+	display: block;
+	margin-top: 3%;
+}
+/* services about section*/
+.serviceAbout{
+	border-top: 1px solid gray;
+	display: flex;
+	flex-flow: row wrap; 
+	border-bottom: 1px solid gray;
+}
+.serviceAbout div {
+	width: 45%;
+	background-color: lightgray;
+	margin: 2%;
+	padding: 2%;
+	border: 2px solid gray;
+}
+.learn{
+	background-color: white;
+	border:2px solid gray;
+	padding: 1% 5%;
+}
+.serviceAbout p{
+	padding-bottom: 4%;
+}
+/* Fact style*/
+.serviceFact{
+	display: flex;
+	margin: 5%;
+}
+.serviceFact div{
+	width: 45%;
+}
+.serviceFact p{
+	margin: 4%;
+	margin-left: 0;
+}
+.serviceFact ul{
+	list-style-type: disc;
+	list-style: inside;
+}
+.serviceFact li{
+	padding: 2%;
 }
