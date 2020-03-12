@@ -176,6 +176,12 @@ body{
 	text-decoration: none;
 	color: gray;
 	padding: 1%;
+	font-size: 10px;
+}
+@media (max-width: 600px){
+	.servNavLinks{
+		font-size: 1.75vw;
+	}
 }
 .servicesheader{
 	display: flex;
@@ -188,7 +194,7 @@ body{
 	justify-content: flex-start;
 }
 .servicesheader h1{
-	font-size: 30px;
+	font-size: 3em;
 	display: block;
 	margin-top: 3%;
 }
@@ -198,14 +204,28 @@ body{
 	display: flex;
 	flex-flow: row wrap; 
 	border-bottom: 1px solid gray;
-}
+	justify-content: space-around;
+	}
+
+
 .serviceAbout div {
-	width: 45%;
-	background-color: lightgray;
-	margin: 2%;
-	padding: 2%;
-	border: 2px solid gray;
+width: 45%;
+background-color: lightgray;
+margin: 2%;
+padding: 2%;
+border: 2px solid gray;
 }
+@media (max-width: 600px){
+	.serviceAbout {
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: center;
+	}
+	.serviceAbout div{
+		width: 95%;
+		}
+}
+
 .learn{
 	background-color: white;
 	border:2px solid gray;
